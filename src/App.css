@@ -8,7 +8,7 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-
+  font-family: sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -52,17 +52,19 @@ body {
 }
 
 .detail-image {
-  width: 629px;
-  height: 642px;
+  border-radius: 20px;
+  width: 500px;
+  height: 550px;
 }
 
 .hero-banner-img {
   position: absolute;
-  right: 40px;
+  right: 0px;
   top: 0px;
-  width: 600px;
-  height: 98vh;
+  width: 700px;
+  height: 99vh;
   margin-top: -290px;
+  border-bottom-left-radius: 50px;
 }
 
 .exercise-card {
@@ -70,7 +72,7 @@ body {
   /* width: fit-content;
   height: fit-content; */
   padding: 10px;
-  background: #fff;
+  /* background: #fff; */
   border-top: 4px solid #FF2625;
   border-bottom-left-radius: 20px;
   text-decoration: none;
@@ -150,8 +152,8 @@ body {
   .hero-banner-img {
     position: absolute;
     top: 200px;
-    height: 60vh;
-    width: 300px;
+    height: 90vh;
+    width: 500px;
   }
 
 
@@ -187,4 +189,9 @@ body {
     left: 50%;
 
   }
+}
+
+.removeilink-style{
+  text-decoration: none;
+  color: inherit;
 }

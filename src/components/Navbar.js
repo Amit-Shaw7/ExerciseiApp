@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Stack } from '@mui/material';
-import Logo from '../assets/logos/Logo.png';
+import { FitnessCenter } from '@mui/icons-material';
 
 const Navbar = () => {
     return (
         <>
-            <Stack direction="row" sx={{gap : {sm : "122px" , xs : "40px"} , mt: {sm : "32px" , xs:"20px"}} }>
-                <Link to="/">
-                    <img style={{ width: "48px", height: "48px", margin: "0px 20px" }} src={Logo} alt="Logo" />
-                </Link>
+            <Stack alignItems="center" direction="row" sx={{ gap: { sm: "122px", xs: "40px" }, pt: { sm: "32px", xs: "20px" } }}>
+                <Stack sx={{ position: "relative", left: { md: "50px", sm: "10px", xs: "10px" } }}>
+                    <Link to="/">
+                        <FitnessCenter sx={{ fontSize: "3rem" }} htmlColor='white' />
+                    </Link>
+                </Stack>
 
-                <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
-                    <Link to="/" style={{ textDecoration: "none", color: "#3A1212", borderBottom: "3px solid #FF2625" }}>
+                <Stack direction="row" gap="40px" fontSize="18px">
+                    <Link to="/" style={{ textDecoration: "none", color: "#FF2625" }}>
                         Home
                     </Link>
-                    <a style={{ textDecoration: "none", color: "#3A1212" }} href="#exercises">Exercise</a>
+                    <a style={{ textDecoration: "none", color: "white" }} href="#exercises">Exercise</a>
                 </Stack>
             </Stack>
         </>

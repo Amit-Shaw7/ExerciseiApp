@@ -7,10 +7,9 @@ const ExerciseCard = ({ exercise }) => {
         <Box sx={{padding:"10px"}}>
             <Link className='exercise-card' to={`/exercise/${exercise.id}`}>
                 <img src={exercise.gifUrl} alt={exercise.name} loading="lazy" />
-                <Stack direction="row">
+                <Stack direction="row" spacing={1} mt={2}>
 
                     <Button sx={{
-                        ml: "21px",
                         color: "#fff",
                         background: "#ffa9a9",
                         fontSize: "14px",
@@ -21,7 +20,6 @@ const ExerciseCard = ({ exercise }) => {
                     </Button>
 
                     <Button sx={{ 
-                        ml: "21px",
                         color: "#fff",
                         background: "#fcc757",
                         fontSize: "14px",
@@ -32,7 +30,7 @@ const ExerciseCard = ({ exercise }) => {
                     </Button>
 
                 </Stack>
-                <Typography ml="21px" color="#3A1212" fontSize="16px" fontWeight="bold" mt="11px" pb="10px" textTransform="capitalize">
+                <Typography color="text.secondary" fontSize="16px" fontWeight="bold" mt="11px" pb="10px" textTransform="capitalize">
                     {exercise.name.slice(0,25)}
                 </Typography>
             </Link>

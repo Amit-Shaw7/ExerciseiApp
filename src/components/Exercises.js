@@ -8,30 +8,30 @@ const Exercises = ({ setExercises, bodyPart, exercises }) => {
   const exercisePerPage = 9;
   const indexOfLastExercise = currPage * exercisePerPage;
   const indexOfFirstIndex = indexOfLastExercise - exercisePerPage;
-  const currentExercises = exercises.slice(indexOfFirstIndex , indexOfLastExercise);
+  const currentExercises = exercises.slice(indexOfFirstIndex, indexOfLastExercise);
 
-  const paginate = (e , value) => {
+  const paginate = (e, value) => {
     setCurrPage(value);
 
-    window.scrollTo({top:1650 , behavior:"smooth"});
+    window.scrollTo({ top: 1650, behavior: "smooth" });
   }
 
-  useEffect(()=> {
+  useEffect(() => {
     const fetchExercises = async () => {
       let exercisesData = [];
 
-      if(bodyPart === 'all'){
+      if (bodyPart === 'all') {
         const url = "https://exercisedb.p.rapidapi.com/exercises";
-        exercisesData = await fetchData(url , exerciseOptions);
-      }else{
+        exercisesData = await fetchData(url, exerciseOptions);
+      } else {
         const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`;
-        exercisesData = await fetchData(url , exerciseOptions);
+        exercisesData = await fetchData(url, exerciseOptions);
       }
       setExercises(exercisesData);
     }
     fetchExercises();
     // eslint-disable-next-line
-  },[bodyPart])
+  }, [bodyPart])
 
   return (
     <Box id="exercises" sx={{
@@ -40,7 +40,7 @@ const Exercises = ({ setExercises, bodyPart, exercises }) => {
       mt="50px"
       p="20px"
     >
-      <Typography variant="h3" color="#3A1212" mb="46px" textAlign="center" >
+      <Typography color="white" fontWeight={700} textAlign="center" mb="50px" sx={{ fontSize: { lg: "44px", xs: "25px" } }}>
         Showing Results...
       </Typography>
 
@@ -55,7 +55,7 @@ const Exercises = ({ setExercises, bodyPart, exercises }) => {
           })
         }
       </Stack>
-      <Stack sx={{ mt: { lg: '114px', xs: '70px' }}} alignItems="center">
+      <Stack sx={{ mt: "50px" }} alignItems="center">
         <Pagination
           color='standard'
           shape='rounded'
@@ -63,7 +63,7 @@ const Exercises = ({ setExercises, bodyPart, exercises }) => {
           count={Math.ceil(exercises.length / exercisePerPage)}
           page={currPage}
           onChange={paginate}
-          size="large"
+          size="medium"
         />
       </Stack>
     </Box>

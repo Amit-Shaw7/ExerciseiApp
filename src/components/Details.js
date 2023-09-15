@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Stack, Button } from '@mui/material';
+import { Typography, Stack, Button, Box } from '@mui/material';
 import BodyPartImg from '../assets/icons/body-part.png';
 import TargetImg from '../assets/icons/target.png';
 import EquipmentImg from '../assets/icons/equipment.png';
@@ -28,20 +28,22 @@ const Details = ({ exerciseDetails }) => {
         <Stack gap="60px" sx={{ flexDirection: { lg: "row" }, p: "20px", alignItems: "center" }}>
             <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
             <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
-                <Typography color="#FF2625" variant='h3' textTransform="uppercase">
+                <Typography color="text.light" variant='h5' textTransform="uppercase">
                     {name}
                 </Typography>
-                <Typography color="#3A1212" variant='h6'>
-                    Exercises keeps you strong . &nbsp;
-                    <span style={{ color: "#FF2526", textTransform: "capitalize" }}><strong>"{name}"</strong></span> is the one of the best exercises to train your <span style={{ color: "#FF2526", textTransform: "capitalize" }}><strong>"{bodyPart}"</strong></span>.
+                <Typography color="text.secondary" variant='h6'>
+                    Exercises keeps you strong&nbsp;
+                    <Box color="text.light" component="span">{name}</Box>
+                    &nbsp;is the one of the best exercises to train your&nbsp;
+                    <Box color="text.light" component="span">{bodyPart}.</Box>
                 </Typography>
                 {
                     extraDetails.map((item) => {
                         return <Stack key={item.id} direction="row" gap="24px" alignItems="center">
-                            <Button sx={{ backgroundColor: "#FFF2DB", borderRadius: "50%", width: "100px", height: "100px" }}>
+                            <Button sx={{ backgroundColor: "transparent", borderRadius: "50%", width: "100px", height: "100px" }}>
                                 <img src={item.icon} alt={bodyPart} style={{ width: "50px", height: "50px" }} />
                             </Button>
-                            <Typography color="#FF2526" variant="h6" textTransform="capitalize">
+                            <Typography color="text.light" variant="h6" textTransform="capitalize">
                                 {item.name}
                             </Typography>
                         </Stack>

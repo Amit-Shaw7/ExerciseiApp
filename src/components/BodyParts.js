@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Stack, Typography } from "@mui/material";
-import Icons from '../assets/icons/gym.png';
 import '../App.css';
 import { FitnessCenter } from '@mui/icons-material';
 

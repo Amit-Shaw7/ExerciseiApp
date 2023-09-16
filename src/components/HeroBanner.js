@@ -8,15 +8,13 @@ const HeroBanner = () => {
   return (
     <Box sx={{ height: { xs: "65vh" }, mt: { lg: "212px", xs: "150px" }, ml: { sm: "50px" }, position: "relative", p: "20px" }}>
       <Typography color="text.light" fontWeight={600} fontSize="24px">
-        Fitthub
+        Fitness club
       </Typography>
       <Typography color="text.light" fontWeight="700px" sx={{ fontSize: { lg: "44px", xs: "40px" } }}>
         Sweat , Rest <br /> And Repeat
       </Typography>
       <Typography color="text.secondary" fontSize="22px" lineHeight="35px" mb={3}>
-        Check out the most effective exercise
-        <br />
-        to get in shape
+        Check out the most effective exercises.
       </Typography>
       <Button href='#exercises' variant='contained' color='primary'>
         Explore Exercises

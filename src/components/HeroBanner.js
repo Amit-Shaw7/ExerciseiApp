@@ -6,7 +6,7 @@ import BannerImage from '../assets/images/Hero.png';
 
 const HeroBanner = () => {
   return (
-    <Box sx={{height: {xs: "65vh" }, mt: { lg: "212px", xs: "150px" }, ml: { sm: "50px" }, position: "relative", p: "20px" }}>
+    <Box sx={{ height: { xs: "65vh" }, mt: { lg: "212px", xs: "150px" }, ml: { sm: "50px" }, position: "relative", p: "20px" }}>
       <Typography color="text.light" fontWeight={600} fontSize="24px">
         Fitthub
       </Typography>
@@ -14,7 +14,9 @@ const HeroBanner = () => {
         Sweat , Rest <br /> And Repeat
       </Typography>
       <Typography color="text.secondary" fontSize="22px" lineHeight="35px" mb={3}>
-        Check out and practise the most effective exercise
+        Check out the most effective exercise
+        <br />
+        to get in shape
       </Typography>
       <Button href='#exercises' variant='contained' color='primary'>
         Explore Exercises

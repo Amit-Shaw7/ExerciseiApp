@@ -1,70 +1,140 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  <br>
+  <a href="https://pijja.vercel.app/"><img src="https://res.cloudinary.com/amitkumarshaw/image/upload/v1700031304/fitthubLogo_ebpfg9.png" alt="managet" width="200"></a>
+  <br>
+  Fitthub
+  <br>
+</h1>
 
-## Available Scripts
+<h4 align="center">An exercise app</h4>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="https://react.dev/">
+    <img width="20px" src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-svg-vector.svg" alt="React">
+  </a>
+  
+  <a href="https://mui.com/">
+      <img height="20px" src="https://w7.pngwing.com/pngs/761/513/png-transparent-material-ui-logo-thumbnail.png" alt="material ui">
+  </a>
+  
+   <a href="https://rapidapi.com/hub">
+    <img height="20px" width="30px" src="https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/r1otclpsq54uempa8x4v" alt="Rapid api">
+  </a>
 
-### `npm start`
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<hr/>
 
-### `npm test`
+## Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://github.com/Amit-Shaw7/ExerciseiApp/assets/98527560/c1e2a631-ac43-4cbe-bb0c-861ad8d63dac
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<hr/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![screenshot](https://res.cloudinary.com/amitkumarshaw/image/upload/v1700032269/Screenshot_281_-_Copy_rgkpis.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<hr/>
 
-### `npm run eject`
+![screenshot](https://res.cloudinary.com/amitkumarshaw/image/upload/v1700032260/Screenshot_304_-_Copy_pszjfq.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<hr/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![screenshot](https://res.cloudinary.com/amitkumarshaw/image/upload/v1700032262/Screenshot_305_a53uuv.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<hr/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![screenshot](https://res.cloudinary.com/amitkumarshaw/image/upload/v1700032262/Screenshot_306_cqithl.png)
 
-## Learn More
+<hr/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![screenshot](https://res.cloudinary.com/amitkumarshaw/image/upload/v1700032268/Screenshot_307_rbx4ph.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<hr/>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Key Features
 
-### Analyzing the Bundle Size
+* Filter , search exercises with body parts or exercise name .
+* See exercise details with a gif illustrating how to do it.
+* In the exercise details page you will see exercise that hit the same muscel group and exercise that uses the same equipment.
+* You will find youtube cideos link for learning the exercise more efficiently.
+* Proper pagination.
+* Fully responsive.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to run in your system
 
-### Making a Progressive Web App
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+# Clone this repository
+$ git clone ...
 
-### Advanced Configuration
+# Go into the frontend
+$ cd ExerciseiApp
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Install dependencies
+$ npm install
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Go to rapid api create a account.
+# Paste this link in browser "https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb" and subscribe to the api by clicking on subscribe to test
+# Take your api key from the request body after subscribing
+# Open /src/utils/FetchData.js file and paste the api key in the "rapid-api-key" field
 
-### `npm run build` fails to minify
+# Run the app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+$ npm run start
+
+```
+
+## How to use
+
+- Start exploring the web app its simple.
+
+## Credits
+
+This web app uses the following technologies:
+
+- [Node.js](https://nodejs.org/)
+- [React.js ](https://react.dev/)
+- [Material UI](https://mui.com/)
+- [Rapid api](https://rapidapi.com/)
+
+This web app uses the following important npm packages:
+
+- [react-horizontal-scrolling-menu](https://www.npmjs.com/package/react-horizontal-scrolling-menu)
+
+## Related
+
+[Fitthub](https://fitthub.vercel.app/) - Deployed version this web app.
+
+
+## You may also like...
+
+- [Youtube Clone](https://github.com/Amit-Shaw7/yt-clone-frontend) - A youtube clone.
+- [Pijja](https://github.com/Amit-Shaw7/pizzaApp---Frontend) - A dummy pizza ordering webapp
+- [Connect](https://github.com/Amit-Shaw7/connect) - A social media web app
+- [Origin AI](https://github.com/Amit-Shaw7/saas-ai) - An ai tool like chatgpt
+- [Managet](https://github.com/Amit-Shaw7/kanban-task-management) - A Task management web app with drag and drop feature
+
+## License
+
+MIT
+
+---
+
+> [Amit Shaw](https://amitshawv2.vercel.app) &nbsp;&middot;&nbsp;
+> GitHub [Amit-Shaw7](https://github.com/Amit-Shaw7) &nbsp;&middot;&nbsp;
+> LinkedIn [amit-shaw-a95121230](https://www.linkedin.com/in/amit-shaw-a95121230/)
+
